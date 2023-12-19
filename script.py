@@ -15,7 +15,7 @@ container = client.containers.run(
     },
     name="test_neo4j_haystack",
     ports={"7687/tcp": ("127.0.0.1", 7687)},
-    detach=False,
+    detach=True,
     remove=True,
 )
 print("Started docker container", container)
