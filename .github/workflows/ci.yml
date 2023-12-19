@@ -30,7 +30,4 @@ jobs:
 
       - name: Test docker
         run: |
-          hostname -i
-          ls -la /var/run/docker.sock
-          docker network ls
           python script.py
